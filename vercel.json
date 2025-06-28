@@ -3,6 +3,7 @@
   "routes": [
     {"src": "/", "dest": "/index.html"},
     {"src": "/npm", "dest": "https://fastly.jsdelivr.net/npm"},
-    {"src": "/gh", "dest": "https://fastly.jsdelivr.net/gh"}
+    {"src": "/gh", "dest": "https://fastly.jsdelivr.net/gh"},
+    {"src": "/gh/661111/hexoSEVER", "dest": "https://fastly.jsdelivr.net/gh/661111/hexoSEVER"}
   ]
 }
