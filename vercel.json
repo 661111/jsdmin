@@ -2,7 +2,13 @@
   "version": 2,
   "routes": [
     {"src": "/", "dest": "/index.html"},
-    {"src": "/npm/(.*)", "dest": "https://fastly.jsdelivr.net/npm"},
-    {"src": "/gh/(.*)", "dest": "https://fastly.jsdelivr.net/gh"}
+    {
+      "src": "/npm/(.*)",
+      "dest": "https://fastly.jsdelivr.net/npm/$1"
+    },
+    {
+      "src": "/gh/(.*)",
+      "dest": "https://fastly.jsdelivr.net/gh/$1"
+    }
   ]
 }
