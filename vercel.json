@@ -5,17 +5,26 @@
     {
       "src": "/npm/(.*)",
       "dest": "https://fastly.jsdelivr.net/npm/$1"
+    },
+    {
+      "src": "/gh/(.*)",
+      "dest": "https://fastly.jsdelivr.net/gh/$1"
+    }
+  ]
+  "headers": [
+    {
+      "source": "/npm/(.*)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
       ]
     },
     {
-      "src": "/gh/(.*)",
-      "dest": "https://fastly.jsdelivr.net/gh/$1"
+      "source": "/gh/(.*)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
       ]
-    }
-  ]
+    },
+  ],
 }
+
 
